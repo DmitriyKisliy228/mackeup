@@ -1,0 +1,95 @@
+.container
+    max-width: 940px
+    margin: 0 auto
+    +r(960)
+        margin: 0 10px
+.header
+    &__wrap
+        dispaly: flex
+        text-align: left
+        padding: 22px 0
+        align-items: baseline
+    &__logo
+        
+    &__nav
+        
+.logo
+    font-size: 0
+    color: #e8603c
+    text-decoration: none
+    +bebas
+    &__part1,&__part2
+        display: inline-block
+        font-size: 36px
+    &__part2    
+        color: #f3af9d
+.nav
+    font-size: 16px
+    +bebas
+    position: relative
+    top: -6px
+    a
+        text-decoration: none
+        color: #b9b9b9
+        margin-left: 24px
+        &.is-active,&:hover
+            color: #e8663c
+.slider
+    position: relative
+    &__slide
+        height: 0
+        padding-bottom: 42%
+        &__next,&__prev
+            position: absolute
+            top: 50%
+            left: 20px
+            cursor: pointer
+            z-index: 100
+            font-size: 54px
+            margin-top: -27px
+        &__next
+            left: auto
+            right: 20px
+            transform: rotate(-180deg)
+            
+.slide
+    position: relative
+    height: 0
+    padding-bottom: 42%
+    .slide__content
+        position: absolute
+        background: #e8663c
+        left: 37px
+        bottom: 31px
+        max-width: 416px
+        padding: 17px
+    &__title
+        font-size: 18px
+        color: #fff
+        text-decoration: none
+        text-transform: uppercase
+        +bebas
+        margin-bottom: 16px
+    p
+        font-size: 12px
+        line-height: 1.4
+        color: 
+            
+.hero
+    overflow: hidden
+    &__wrap
+        position: relative
+        &:before,&:after
+            position: absolute
+            height: 60px
+            background: #f2ae9c
+            content: ""
+            width: 1000px
+            top: 0
+        &:before
+            right: 100%
+            margin-right: 10px
+        &:after
+            left: 100%
+            margin-left: 10px
+    
